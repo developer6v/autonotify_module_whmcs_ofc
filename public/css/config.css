@@ -1,0 +1,177 @@
+.fa-whatsapp {
+    color: rgb(37, 211, 102);
+}
+
+.fa-key {
+    color: #638db1;
+}
+
+.signalicon {
+    color: rgb(37, 211, 102);
+}
+
+.config_input_div {
+    margin-top: 20px;
+    padding: 10px 20px 20px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.config_title {
+    display: block;
+    font-size: 30px;
+}
+
+.config_header {
+    margin-bottom: 20px;
+}
+
+.config_subtitle {
+    font-size: 14px;
+    line-height: 1.2;
+    color: #757474;
+}
+
+.config_input_div p {
+    font-weight: bold;
+    display: block;
+    /*color: #1E90FF*/;
+}
+
+.config_input_div span {
+    font-weight: 300;
+    font-size: 14px;
+    color: #757474;
+    display: block;
+}
+
+.config_body {
+    margin-top: 20px;
+    width: 60%;
+}
+
+.config_input, .config_select {
+    border: 0px;
+    border-bottom: 1px solid #c5c5c5;
+    width: 90%;
+    font-weight: 100;
+    font-size: 15px;
+    height: 40px;
+    transition: outline 0.3s ease, border-bottom 0.3s ease;
+}
+
+
+.config_input:focus, .config_select:focus {
+    outline: none;
+    border-bottom: 2px solid #1E90FF;
+}
+
+#config_save_autonotify {
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    font-weight: bold;
+    /* float: right; */
+    width: 150px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: 0px;
+    background-color: #1E90FF;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#config_save_autonotify:focus {
+    border: 0px;
+}
+
+#config_save_autonotify:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.fa_Ativado {
+    color: rgb(37, 211, 102);
+}
+
+.fa_Desativado {
+    color: darkred;
+}
+
+.saving_result {
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
+}
+
+.saving_result img {
+    display: none;
+    width: 20px;
+}
+
+.saving_result_true {
+    color: rgb(37, 211, 102);
+    background-color: rgb(193, 247, 213);
+}
+
+.saving_result_false {
+    color: darkred;
+    background-color: rgb(243, 182, 182);
+}
+
+.saving_result_false, .saving_result_true {
+    display: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.saving_result_false, .saving_result_true {
+    font-weight: bold;
+}
+
+#config_save_autonotify:active {
+    transform: scale(0.8);
+}
+
+
+.status-autonotify-unactivated, .status-autonotify-activated {
+    display: inline-block;
+    font-size: 15px;
+}
+
+.status-autonotify-activated {
+    color: chartreuse;
+}
+
+.status-autonotify-unactivated {
+    color: brown;
+}
+
+.edit-token {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 17px;
+    color: #6a6969;
+    transition: scale 1.0s ease;
+    cursor: pointer;
+}
+
+.edit-token:hover {
+    transform: scale(1.1);
+}
+
+.edit-token:active {
+    transform: scale(1.0);
+}
+
+#config_save_autonotify {
+    display: none;
+}
+
+.cancelUpdate {
+    display: none;
+    margin-right: 20px;
+    color: #808080;
+    text-decoration: underline;
+    cursor: pointer; 
+}

@@ -1,0 +1,61 @@
+#autonotify_logo {
+    width: 300px;
+}
+
+.autonotify_content {
+    padding: 20px;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+}
+
+.tab_content_autonotify {
+    display: none;
+}
+
+h1 {
+    display: none!important; 
+}
+
+.autonotify_header i, .autonotify_header p {
+    display: block;
+    font-size: 30px;
+    justify-self: center;
+}
+
+
+.autonotify_header {
+    justify-self: center;
+    display: grid;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: 1px solid #D3D3D3;
+    width: fit-content;
+    justify-self: center;
+    margin-top: 15px;
+}
+
+.tab_unique {
+    padding: 7px;
+    border-radius: 25px;
+    border: 1px solid #1E90FF;
+    color: #1E90FF;
+    margin-right: 13px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease, color 0.2s ease, font-weight 0.2s ease;
+}
+
+
+.tab_unique:hover {
+    background-color: #1E90FF;
+    transform: scale(1.1);
+    color: white;
+    font-weight: bold;
+}
+
+.autonotify_body {
+    width: 100%;
+    display: grid;
+}

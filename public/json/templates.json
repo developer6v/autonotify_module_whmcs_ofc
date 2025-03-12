@@ -1,0 +1,152 @@
+[ 
+    {
+        "messageType": "Fatura Criada",
+        "message": "Olá {@firstname}! 👋\n\nGostaríamos de informar que a fatura N° {@invoiceid}, referente aos seguintes serviços:\n\n{@productlist}\n\ncom vencimento em {@duedate}, no valor total de R$ {@value}, foi enviada para seu email.\n\nNa sua área de cliente você também encontra o código de barras, pix copia e cola ou se preferir pode até imprimir o boleto.\n\nAtenciosamente,\n{@company}\n{@website}",
+        "status": "ATIVO",
+        "type": "CLIENTE",
+        "variables": "{@invoiceid} - ID da fatura, {@duedate} - Data de vencimento, {@value} - Valor da fatura, {@productlist} - Produtos presentes na fatura, {@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@company} - Nome da sua empresa, {@date} - Data atual, {@hour} - Horário atual"
+    },
+    {
+        "messageType": "Fatura Paga",
+        "message": "Olá {@firstname}! 👋\n\nGostaríamos de informar que o pagamento da sua fatura N° {@invoiceid}, no valor total de R$ {@value}, foi confirmado com sucesso!\n\nSeus serviços referentes aos produtos:\n\n{@productlist}\n\nserão ativados ou continuarão ativos.\n\nAgradecemos a confiança!\nAtenciosamente,\n{@company}\n{@website}",
+        "status": "ATIVO",
+        "type": "CLIENTE",
+        "variables": "{@invoiceid} - ID da fatura, {@duedate} - Data de vencimento, {@value} - Valor da fatura, {@productlist} - Produtos presentes na fatura, {@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@company} - Nome da sua empresa, {@date} - Data atual, {@hour} - Horário atual"
+    },
+    {
+        "messageType": "Fatura Cancelada",
+        "message": "Olá {@firstname}! 👋\n\nLamentamos informar o cancelamento da fatura N° {@invoiceid}, no valor total de R$ {@value}, referente aos seguintes serviços:\n\n{@productlist}\n\nPara mais detalhes entre em contato com o nosso suporte via ticket em sua área do cliente.\n\nAtenciosamente,\n{@company}\n{@website}",
+        "status": "ATIVO",
+        "type": "CLIENTE",
+        "variables": "{@invoiceid} - ID da fatura, {@duedate} - Data de vencimento, {@value} - Valor a fatura, {@productlist} - Produtos presentes na fatura, {@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@company} - Nome da sua empresa, {@date} - Data atual, {@hour} - Horário atual"
+    },
+    {
+        "messageType": "Fatura Reembolsada",
+        "message": "Olá {@firstname}! 👋\n\nInformamos que o reembolso da fatura N° {@invoiceid}, no valor total de R$ {@value}, foi processado com sucesso!\n\nO reembolso foi feito pelo mesmo método de pagamento que você utilizou na compra original. Note que pode levar de 5 a 10 dias úteis para que o reembolso seja refletido na sua conta bancária ou no extrato do cartão de crédito. Se tiver alguma dúvida ou precisar de assistência adicional, entre em contato com o nosso suporte via ticket em sua área do cliente.\n\nAtenciosamente,\n{@company}\n{@website}",
+        "status": "ATIVO",
+        "type": "CLIENTE",
+        "variables": "{@invoiceid} - ID da fatura, {@duedate} - Data de vencimento, {@value} - Valor da fatura, {@productlist} - Produtos presentes na fatura, {@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@company} - Nome da sua empresa, {@date} - Data atual, {@hour} - Horário atual"
+    },
+    {
+        "messageType": "Lembrete de Fatura",
+        "message": "Olá {@firstname}! 👋\n\nSua fatura N° {@invoiceid}, no valor total de R$ {@value} está prestes a vencer ({@duedate}) 😕\n\nPara que os seguintes serviços sejam ativados ou continuem ativos:\n\n{@productlist}\n\nrealize o pagamento até {@duedate}\n\nNo seu email e na sua área de cliente você encontra o código de barras, pix copia e cola ou se preferir pode até imprimir o boleto.\n\nAtenciosamente,\n{@company}\n{@website}",
+        "status": "ATIVO",
+        "type": "CLIENTE",
+        "variables": "{@invoiceid} - ID da fatura, {@duedate} - Data de vencimento, {@value} - Valor da fatura, {@productlist} - Produtos presentes na fatura, {@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@company} - Nome da sua empresa, {@date} - Data atual, {@hour} - Horário atual"
+    },
+    {
+        "messageType": "Ticket Criado",
+        "message": "Olá {@firstname}, 👋\n\nRecebemos o seu ticket #{@ticketid} em nosso sistema, referente ao assunto: {@ticketsubject}\n\nAguarde, em breve um de nossos atendentes irá lhe atender. Acompanhe a situação do ticket:\n\n{@ticketurl}\n\nAtenciosamente,\n{@company}",
+        "status": "ATIVO",
+        "type": "CLIENTE",
+        "variables": "{@ticketid} - ID do ticket, {@ticketmessage} - Mensagem do ticket, {@ticketsubject} - Assunto do ticket, {@ticketurl} - Url do ticket, {@ticketdate} - Data de criação do ticket, {@tickethour} - Horário de criação do ticket, {@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@company} - Nome da sua empresa, {@date} - Data atual, {@hour} - Horário atual"
+    },
+    {
+        "messageType": "Ticket Respondido",
+        "message": "Olá {@firstname}, 👋\n\nO seu ticket *#{@ticketid}*, referente ao assunto: {@ticketsubject}, foi respondido por nossa equipe nesse exato momento ({@date} {@hour})\n\n*Resposta:*\n{@ticketanswer}\n\nAcompanhe a situação do ticket:\n- {@ticketurl}\n\nAtenciosamente,\n{@company}",
+        "status": "ATIVO",
+        "type": "CLIENTE",
+        "variables": "{@ticketid} - ID do ticket, {@ticketmessage} - Mensagem do ticket, {@ticketanswer} - Resposta do admin, {@ticketsubject} - Assunto do ticket, {@ticketurl} - Url do ticket, {@ticketdate} - Data de criação do ticket, {@tickethour} - Horário de criação do ticket, {@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@company} - Nome da sua empresa, {@date} - Data atual, {@hour} - Horário atual"
+    },
+    {
+        "messageType": "Ticket Fechado",
+        "message": "Olá {@firstname}, 👋\n\nO seu ticket #{@ticketid}, referente ao assunto: {@ticketsubject}, foi concluído por nossa equipe nesse exato momento ({@date} {@hour})\n\nCaso tenha eventuais dúvidas fique a vontade para responde-lo, e com isso reabrir o chamado:\n- {@ticketurl}\n\nAtenciosamente,\n{@company}",
+        "status": "ATIVO",
+        "type": "CLIENTE",
+        "variables": "{@ticketid} - ID do ticket, {@ticketmessage} - Mensagem do ticket, {@ticketanswer} - Resposta do admin, {@ticketsubject} - Assunto do ticket, {@ticketurl} - Url do ticket, {@ticketdate} - Data de criação do ticket, {@tickethour} - Horário de criação do ticket, {@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@company} - Nome da sua empresa, {@date} - Data atual, {@hour} - Horário atual"
+    },
+    {
+        "messageType": "Serviço Criado",
+        "message": "Olá {@firstname}! 👋\n\nGostaríamos de informar que seu serviço {@productname} foi ativado!\n\nPara sua segurança os dados de acesso foram encaminhados ao seu e-mail:\n- {@email}\nCaso não encontre entre em contato conosco.\n\nAtenciosamente,\n{@company}\n{@website}",
+        "status": "ATIVO",
+        "type": "CLIENTE",
+        "variables": "{@productname} - Nome do produto, {@serviceid} - ID do serviço criado, {@username} - Username do serviço, {@password} - Senha do serviço, {@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@company} - Nome da sua empresa, {@date} - Data atual, {@hour} - Horário atual"
+    },
+    {
+        "messageType": "Serviço Suspenso",
+        "message": "Olá {@firstname}! 👋\n\nLamentamos informar que seu serviço {@productname} foi suspenso!\n\nGeralmente a suspensão ocorre por falta de pagamento. Se você pensa que possa ser um engano ou deseja mais informações, entre em contato com nosso suporte em sua área do cliente.\n\nAtenciosamente,\n{@company}\n{@website}",
+        "status": "ATIVO",
+        "type": "CLIENTE",
+        "variables": "{@productname} - Nome do produto, {@serviceid} - ID do serviço criado, {@username} - Username do serviço, {@password} - Senha do serviço, {@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@company} - Nome da sua empresa, {@date} - Data atual, {@hour} - Horário atual"
+    },
+    {
+        "messageType": "Serviço Reativado",
+        "message": "Olá {@firstname}! 👋\n\nGostaríamos de informar que seu serviço {@productname} foi reativado!\n\nAgradecemos a preferência. Para mais informações acesse a área do cliente.\n\nAtenciosamente,\n{@company}\n{@website}",
+        "status": "ATIVO",
+        "type": "CLIENTE",
+        "variables": "{@productname} - Nome do produto, {@serviceid} - ID do serviço criado, {@username} - Username do serviço, {@password} - Senha do serviço, {@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@company} - Nome da sua empresa, {@date} - Data atual, {@hour} - Horário atual"
+    },
+    {
+        "messageType": "Serviço Cancelado",
+        "message": "Olá {@firstname}! 👋\n\nLamentamos informar que seu serviço {@productname} foi cancelado!\n\nSe você pensa que possa ser um engano ou deseja mais informações, entre em contato com nosso suporte em sua área do cliente.\n\nAtenciosamente,\n{@company}\n{@website}",
+        "status": "ATIVO",
+        "type": "CLIENTE",
+        "variables": "{@productname} - Nome do produto, {@serviceid} - ID do serviço criado, {@username} - Username do serviço, {@password} - Senha do serviço, {@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@company} - Nome da sua empresa, {@date} - Data atual, {@hour} - Horário atual"
+    },
+    {
+        "messageType": "Bem-Vindo",
+        "message": "Olá {@firstname}! 👋\n\nSeja bem-vindo a {@company}!\nObrigado por escolher nossos serviços.\n\nConheça sua conta:\n- {@website}\n\nAtenciosamente,\n{@company}",
+        "status": "ATIVO",
+        "type": "CLIENTE",
+        "variables": "{@ipaddr} - Endereço IP da criação da conta, {@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@company} - Nome da sua empresa, {@date} - Data atual, {@hour} - Horário atual"
+    },
+    {
+        "messageType": "Login de Cliente",
+        "message": "Olá {@firstname} 👋!\n\nVocê realizou login recentemente?\nIdentificamos um acesso à sua conta originado do endereço de IP:\n\n- {@ipaddr}\n\nCaso desconheça este IP recomendamos alterar sua senha imediatamente.\n\nAtenciosamente,\n{@company}\n{@website}",
+        "status": "ATIVO",
+        "type": "CLIENTE",
+        "variables": "{@ipaddr} - Endereço IP do login, {@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@company} - Nome da sua empresa, {@date} - Data atual, {@hour} - Horário atual"
+    },
+    {
+        "messageType": "Ticket Respondido",
+        "message": "Ticket *N°{@ticketid}* respondido em nosso sistema\n\n*Informações do Ticket:*\n- Cliente: {@firstname} {@lastname} #{@clientid}\n- Assunto: {@ticketsubject}\n- Horário: {@date} {@hour}\n\n*Mensagem:*\n{@ticketanswer}\n\nResponda agora:\n- {@ticketurl}",
+        "status": "ATIVO",
+        "type": "ADMIN",
+        "variables": "{@ticketid} - ID do ticket, {@ticketmessage} - Mensagem do ticket, {@ticketanswer} - Resposta do cliente, {@ticketsubject} - Assunto do ticket, {@ticketurl} - Url do ticket, {@ticketdate} - Data de criação do ticket, {@tickethour} - Horário de criação do ticket, {@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@company} - Nome da sua empresa, {@date} - Data atual, {@hour} - Horário atual"
+    },
+    {
+        "messageType": "Ticket Criado",
+        "message": "Novo Ticket *N°{@ticketid}* em nosso sistema\n\n*Informações do Ticket:*\n- Cliente: {@firstname} {@lastname} #{@clientid}\n- Assunto: {@ticketsubject}\n- Horário: {@date} {@hour}\n\n*Mensagem:*\n{@ticketmessage}\n\nResponda agora:\n- {@ticketurl}",
+        "status": "ATIVO",
+        "type": "ADMIN",
+        "variables": "{@ticketid} - ID do ticket, {@ticketmessage} - Mensagem do ticket, {@ticketsubject} - Assunto do ticket, {@ticketurl} - Url do ticket, {@ticketdate} - Data de criação do ticket, {@tickethour} - Horário de criação do ticket, {@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@company} - Nome da sua empresa, {@date} - Data atual, {@hour} - Horário atual"
+    },
+    {
+        "messageType": "Novo Cliente",
+        "message": "Novo cliente cadastrado *#{@clientid}*\n\n*Informações do cliente:*\n- Nome: {@firstname} {@lastname} #{@clientid}\n- Email: {@email}\n- Telefone: {@clientphone}\n- Empresa: {@clientcompany}\n\nAcesse o perfil cliente:\n- {@clienturl}",
+        "status": "ATIVO",
+        "type": "ADMIN",
+        "variables": "{@clienturl} - Url do perfil do cliente, {@clientphone} - Telefone do cliente, {@clientcompany} - Empresa do cliente, {@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@company} - Nome da sua empresa, {@date} - Data atual, {@hour} - Horário atual"
+    },    
+    {
+        "messageType": "Novo Pedido",
+        "message": "Novo pedido *#{@orderid}* no valor de *R$ {@value}*\n\n*Informações do Pedido:*\n- Pagamento: {@paymentmethod}\n- Status: {@orderstatus}\n- Fatura N°: {@invoiceid}\n\n*Pedido criado por:*\n- {@orderrequestor}\n\n*Itens do pedido:*\n{@productslist}\n\n*Informações do Cliente:*\n- Nome: {@firstname} {@lastname} #{@clientid}\n- Email: {@email}\n- Telefone: {@clientphone}\n\nPara mais informações:\n- {@orderurl}",
+        "status": "ATIVO",
+        "type": "ADMIN",
+        "variables": "{@value} - Valor do pedido, {@orderid} - ID do pedido, {@paymentmethod} - Método de pagamento, {@orderrequestor} - Criador do pedido, {@productslist} - Serviços presentes no pedido, {@clientphone} - Telefone do cliente, {@address} - Endereço do cliente, {@invoiceid} - ID da fatura, {@orderstatus} - Status do pedido, {@orderurl} - Url para visualizar o pedido, {@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@company} - Nome da sua empresa, {@date} - Data atual, {@hour} - Horário atual"
+    },
+    
+    {
+        "messageType": "Pedido Pago",
+        "message": "Você recebeu o valor de *R$ {@value}* do pedido *#{@orderid}*\n\n*Informações do Pedido:*\n- Pagamento: {@paymentmethod}\n- Status: {@orderstatus}\n- Fatura N°: {@invoiceid}\n\n*Pedido criado por:*\n- {@orderrequestor}\n\n*Itens do pedido:*\n{@productslist}\n\n*Informações do Cliente:*\n- Nome: {@firstname} {@lastname} #{@clientid}\n- Email: {@email}\n- Telefone: {@clientphone}\n\nPara mais informações:\n- {@orderurl}",
+        "status": "ATIVO",
+        "type": "ADMIN",
+        "variables": "{@value} - Valor do pedido, {@orderid} - ID do pedido, {@paymentmethod} - Método de pagamento, {@orderrequestor} - Criador do pedido, {@productslist} - Serviços presentes no pedido, {@clientphone} - Telefone do cliente, {@address} - Endereço do cliente, {@invoiceid} - ID da fatura, {@orderstatus} - Status do pedido, {@orderurl} - Url para visualizar o pedido, {@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@company} - Nome da sua empresa, {@date} - Data atual, {@hour} - Horário atual"
+    },
+        
+    {
+        "messageType": "Registro de Domínio",
+        "message": "Novo registro de domínio *#{@domainid}*\n\n*Informações do domínio:*\n- Domínio:{@dominio}\n- Período: {@regperiod}\n- Cliente: {@firstname} {@lastname} (#{@clientid})\n\n*Informações do contato:*\n- Nome: {@contactname}\n- Telefone: {@contactphone}\n- Email: {@contactemail}\n\nPara mais informações:\n - {@domainurl}",
+        "status": "ATIVO",
+        "type": "ADMIN",
+        "variables": "{@domainurl} - Url para visualizar as informações do domínio, {@domainid} - ID do domínio, {@dominio} - Domínio, {@dominioperiodo} - Período do domínio, {@contactname} - Nome do contato do domínio, {@contactphone} - Telefone do contato do domínio, {@contactemail} - Email do contato do domínio,{@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@company} - Nome da sua empresa, {@date} - Data atual, {@hour} - Horário atual"
+    },
+
+    {
+        "messageType": "Falha no Registro de Domínio",
+        "message": "Falha no registro de domínio *#{@domainid}*\n\n*Informações do domínio:*\n- Domínio:{@dominio}\n- Período: {@dominioperiodo}\n- Cliente: {@firstname} {@lastname} (#{@clientid})\n\n*Informações do contato:*\n- Nome: {@contactname}\n- Telefone: {@contactphone}\n- Email: {@contactemail}\n\n*Motivo do erro*:\n - {@domainerror}",
+        "status": "ATIVO",
+        "type": "ADMIN",
+        "variables": "{@domainerror} - Motivo do erro, {@domainurl} - Url para visualizar as informações do domínio, {@domainid} - ID do domínio, {@dominio} - Domínio, {@dominioperiodo} - Período do domínio, {@contactname} - Nome do contato do domínio, {@contactphone} - Telefone do contato do domínio, {@contactemail} - Email do contato do domínio,{@clientid} - ID do cliente, {@firstname} - Nome do cliente, {@lastname} - Sobrenome do cliente, {@email} - Email do cliente, {@website} - Link do site, {@company} - Nome da sua empresa, {@date} - Data atual, {@hour} - Horário atual"
+    }
+]

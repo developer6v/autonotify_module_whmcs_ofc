@@ -1,5 +1,8 @@
 <?php
 
+require_once __DIR__ . '/formattNumber.php'; 
+
+
 use WHMCS\Database\Capsule;
 
 function autonotify_send_hook ($hook, $vars, $clientId) {
@@ -22,6 +25,8 @@ function autonotify_send_hook ($hook, $vars, $clientId) {
             "Content-Type: application/json",
             "Authorization: Bearer " . $token
         ];
+
+        $vars['phone'] = formatPhoneNumber($vars['phone']);
 
         $postfields = json_encode ([
             "keys" => $hook,
